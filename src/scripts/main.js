@@ -8,10 +8,7 @@ function waitFor(element, eventName) {
       resolve(alertMessage);
     });
   }).then((data) => {
-    const span = document.createElement('span');
-
-    span.textContent = data;
-    document.body.append(span);
+    printMessage(data);
   });
 }
 
